@@ -1,0 +1,74 @@
+/*style.css */
+    body {
+      background-image: url(https://osomviajes.com/wp-content/uploads/2021/12/Bariloche-en-invierno-1.jpg);
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+    .payment-form {
+      background: #fff;
+      opacity: 96%;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 10px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .payment-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #343333;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .form-row {
+      display: flex;
+      gap: 10px;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #00b5f7;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #00679a;
+    }
+    .payment-card {
+      background: #ffffff;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .img-tarjetas {
+      display: block;
+      margin-left: 40%;
+      margin-top: 1%;
+      width: 20%;
+      height: 120px;
+      }
