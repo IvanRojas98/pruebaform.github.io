@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Formulario de Pago</title>
+</head>
+<body>
+  <form class="payment-form">
+    <h2>Pagar con Tarjeta</h2>
+    <div class="form-group">
+      <label for="cardholder">Nombre en la tarjeta</label>
+      <input type="text" id="cardholder" name="cardholder" required>
+    </div>
+    <div class="form-group">
+      <label for="cardnumber">Número de tarjeta</label>
+      <input type="text" id="cardnumber" name="cardnumber" maxlength="19" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="expdate">Fecha de expiración</label>
+        <input type="text" id="expdate" name="expdate" placeholder="MM/AA" maxlength="5" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" name="cvv" maxlength="4" required>
+      </div>
+    </div>
+    <button type="submit">Pagar</button>
+  </form>
+</body>
+</html>
