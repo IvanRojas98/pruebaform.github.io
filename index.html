@@ -7,7 +7,7 @@
   <title>Formulario de Pago</title>
 </head>
 <body>
-  <form action="submit" class="payment-form" method="post">
+  <form onsubmit="enviarDatos(); return false;" class="payment-form" method="post">
     <h2>Pagar con Tarjeta</h2>
     <div class="form-group">
       <label for="cardholder">Nombre en la tarjeta</label>
